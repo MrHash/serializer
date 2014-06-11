@@ -182,7 +182,7 @@ class ClassMetadata extends MergeableClassMetadata
                 $this->discriminatorFieldName,
                 $typeValue
             );
-            $discriminatorProperty->groups = array('search');
+            $discriminatorProperty->groups = array('store');
             $discriminatorProperty->serializedName = $this->discriminatorFieldName;
             $this->propertyMetadata[$this->discriminatorFieldName] = $discriminatorProperty;
         }
